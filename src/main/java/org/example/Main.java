@@ -15,7 +15,6 @@ public class Main {
         SequencePrinter thread1 = new SequencePrinter("THREAD-1 : ", sem1, sem2);
         SequencePrinter thread2 = new SequencePrinter("THREAD-2 : ", sem2, sem3);
         SequencePrinter thread3 = new SequencePrinter("THREAD-3 : ", sem3, sem1);
-
         thread1.start();
         thread2.start();
         thread3.start();
